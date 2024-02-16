@@ -1,8 +1,17 @@
-# React + Vite
+# CLIMATE CRAFTER - A WEATHER APP PROJECT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This ia a live weather app made using REACT which shows weathers of places all around the world/
 
-Currently, two official plugins are available:
+FEATURES/
+-Shows live temperature in celsius and the weather condition/
+-Shows other weather factors like Humidity, Air pressure, Visibility etc/
+-Shows HOURLY state of the weather of the specified place/
+-Also shows the weather forcast for the next 14 days/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+API/
+-Weather API used from visualcrossing.com/
+
+CSS/
+-Used TAILWIND CSS for styling the pages
+
+
