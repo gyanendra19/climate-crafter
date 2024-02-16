@@ -18,7 +18,7 @@ function Search() {
     <>
     <SearchInput />
     <div className='flex w-full h-1/2 justify-center items-center'>
-      <h1 className='text-2xl bg-white/25 w-5/12 flex items-center justify-center h-28 rounded-2xl p-4'>
+      <h1 className='text-2xl bg-white/25 w-5/12 flex items-center justify-center h-28 rounded-2xl p-4 max-lg:h-64 max-lg:w-7/12'>
         {errorMsg}
       </h1>
     </div>

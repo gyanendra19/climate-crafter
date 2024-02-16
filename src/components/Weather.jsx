@@ -30,15 +30,15 @@ const {fahrenheitToCelsius, allWeather, address, futureWeather, dayOrNight} = us
             }
           </div>
 
-          <div className='mt-10 absolute left-40 max-md:mt-8 max-md:left-24 max-md:flex'>
+          <div className='mt-10 absolute left-40 max-md:mt-6 max-md:left-24 max-md:flex'>
             <div className='flex'>
               <h1 className='text-6xl text-black/75 max-md:text-5xl'>{fahrenheitToCelsius(allWeather.temp).toFixed(1)}°</h1>
               <span className='text-4xl mt-5 ml--1 text-black/75 max-md:text-3xl'>c</span>
             </div>
 
-            <div className='mt-2 text-xl text-black/85 max-md:mt-0'>
+            <div className='mt-2 text-xl text-black/85 max-md:mt-0 max-lg:ml-2'>
               <p className='font-medium'>{allWeather.conditions}</p>
-              <span className='block mt-1 font-medium max-md:absolute max-md:right-20 max-md:top-11 max-md:text-sm max-md:w-24'>{fahrenheitToCelsius(futureWeather[0]?.tempmin).toFixed(1)}° / {fahrenheitToCelsius(futureWeather[0]?.tempmax).toFixed(1)}°</span>
+              <span className='block mt-1 font-medium  max-md:right-20 max-md:top-11 max-md:text-sm max-md:w-24'>{fahrenheitToCelsius(futureWeather[0]?.tempmin).toFixed(1)}° / {fahrenheitToCelsius(futureWeather[0]?.tempmax).toFixed(1)}°</span>
             </div>
           </div>
 
