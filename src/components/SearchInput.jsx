@@ -46,6 +46,7 @@ function SearchInput() {
           <input
             className='w-48 h-12 rounded-2xl p-4 bg-white/25 focus:outline-none  text-black uppercase'
             type="text"
+            placeholder='country'
             value={country}
             onChange={(e) => setCountry(e.target.value)}
           />
