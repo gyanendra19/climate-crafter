@@ -37,12 +37,12 @@ console.log(errorMsg)
         <WeatherContext.Provider value={{ allWeather, setAllWeather, futureWeather, setFutureWeather, day, fahrenheitToCelsius, address, setAddress, dayOrNight,error, setError, errorMsg, setErrorMsg,Loading, setLoading }}>
           <div className='w-full h-screen'>
             {dayOrNight(allWeather) >= 19 || dayOrNight(allWeather) < 6 ?
-              <img className='w-full absolute -z-10 max-lg:hidden' src="/src/img/night-sky.jpg" alt="" />
+              <img className='w-full absolute -z-10 max-lg:hidden' src="/img/night-sky.jpg" alt="" />
               :
-              <img className='w-full morning absolute -z-10 max-lg:hidden' src="/src/img/morning.jpg" alt="" />
+              <img className='w-full morning absolute -z-10 max-lg:hidden' src="/img/morning.jpg" alt="" />
             }
-            <img className='w-full night absolute -z-10 hidden max-lg:block' src="/src/img/mobile-sky.jpg" alt="" />
-            <img className='absolute h-28 left-3 max-lg:h-16 max-lg:left-0' src="/src/img/logo.png" alt="" />
+            <img className='w-full night absolute -z-10 hidden max-lg:block' src="/img/mobile-sky.jpg" alt="" />
+            <img className='absolute h-28 left-3 max-lg:h-16 max-lg:left-0' src="/img/logo.png" alt="" />
             <Search />
           </div>
         </WeatherContext.Provider>

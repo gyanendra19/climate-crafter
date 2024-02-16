@@ -19,13 +19,13 @@ function FutureCast() {
                 <span className='text-3xl mt-5 ml--1'>°</span>
                 <span className='text-4xl mt-8 ml--1'>c</span>
                {date.conditions === 'Clear' ?
-                  <img className='h-16 mt-2 ml-2 sun-spin' src="/src/img/Designer.png" alt="/" />
+                  <img className='h-16 mt-2 ml-2 sun-spin' src="/img/Designer.png" alt="/" />
                   :
                   date.conditions?.split(',').includes('Rain')
                     ?
-                    <img className='h-16 mt-2 cloud-size' src="/src/img/rain.png" alt="/" />
+                    <img className='h-16 mt-2 cloud-size' src="/img/rain.png" alt="/" />
                     :
-                    <img className='h-16 mt-2 cloud-size' src="/src/img/cloud.png" alt="/" />
+                    <img className='h-16 mt-2 cloud-size' src="/img/cloud.png" alt="/" />
                 }
               </div>
 

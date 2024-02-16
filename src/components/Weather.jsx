@@ -17,16 +17,16 @@ const {fahrenheitToCelsius, allWeather, address, futureWeather, dayOrNight} = us
         <div className='w-6/12 bg-white/25 h-full rounded-2xl flex relative max-lg:w-11/12'>
           <div className='mt-3'>
             {(allWeather.conditions === 'Clear' && (dayOrNight(allWeather) >= 19 || dayOrNight(allWeather) < 6) ) ?
-            <img className='h-36 mr-3 mt-1 cloud-size max-md:h-20 max-md:ml-4' src="/src/img/moon.png" alt="/" />
+            <img className='h-36 mr-3 mt-1 cloud-size max-md:h-20 max-md:ml-4' src="/img/moon.png" alt="/" />
             :
             allWeather.conditions === 'Clear' ? 
-            <img className='h-40 mr-6 sun-spin max-md:h-20' src="/src/img/Designer.png" alt="/" />
+            <img className='h-40 mr-6 sun-spin max-md:h-20' src="/img/Designer.png" alt="/" />
             :
             allWeather.conditions?.split(',').includes('Rain') 
             ?
-            <img className='h-52 absolute cloud-size max-md:h-20' src="/src/img/rain.png" alt="/" />
+            <img className='h-52 absolute cloud-size max-md:h-20' src="/img/rain.png" alt="/" />
             :
-            <img className='h-32 mr-6 mt-2 cloud-size max-md:h-20' src="/src/img/cloud.png" alt="/" />
+            <img className='h-32 mr-6 mt-2 cloud-size max-md:h-20' src="/img/cloud.png" alt="/" />
             }
           </div>
 
@@ -45,8 +45,8 @@ const {fahrenheitToCelsius, allWeather, address, futureWeather, dayOrNight} = us
           <div className='grid-cols-2 grid absolute right-7 mt-3 gap-x-5 gap-2 max-md:mt-28 max-md:gap-1 max-md:right-5'>
             <div className='w-36 bg-white/35 h-20 rounded-xl grid grid-cols-2 items-center justify-center gap-2 max-md:w-36 max-md:h-16'>
               <div className='flex flex-col justify-center items-center mb-9'>
-                <img className='h-11 w-11 max-md:h-8 max-md:w-8' src="/src/img/sunrise.png" alt="" />
-                <img className='h-8 w-8 max-md:h-6 max-md:w-6' src="/src/img/sunset.png" alt="" />
+                <img className='h-11 w-11 max-md:h-8 max-md:w-8' src="/img/sunrise.png" alt="" />
+                <img className='h-8 w-8 max-md:h-6 max-md:w-6' src="/img/sunset.png" alt="" />
               </div>
 
               <div className='flex flex-col justify-center items-start mb-6'>

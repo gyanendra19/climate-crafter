@@ -9,7 +9,8 @@ function SearchInput() {
     const [country, setCountry] = useState('India')
     const [toggle, setToggle] = useState(false)
     const { setAllWeather, setFutureWeather,setAddress, setError, setErrorMsg, setLoading} = useWeatherContext()
-  
+
+    console.log(import.meta.env)
     useEffect(() => {
       ; (async () => {
         try{
@@ -17,15 +18,16 @@ function SearchInput() {
             setLoading(true)
             const response = await axios({
               method: 'GET',
-              url: `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city},${country}?key=B63DUQNK7PUR8YMBJ7342RM4F`
+              url: `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city},${country}?key=${import.meta.env.VITE_API_KEY}`
             })
+            
             setAllWeather(response.data.currentConditions)
             setFutureWeather(response.data.days)
             setAddress(response.data.address)
             setLoading(false)
         }catch(err){
             setError(true)
-            setErrorMsg(err.response?.data || 'No internet Connection, Try Again!')
+            setErrorMsg(err.response?.data || 'No internet Connection or something went wrong, Try Again!')
             setLoading(false)
         }
       })()
